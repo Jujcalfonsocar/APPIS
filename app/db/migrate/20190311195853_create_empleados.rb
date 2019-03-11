@@ -8,7 +8,7 @@ class CreateEmpleados < ActiveRecord::Migration[5.0]
         t.timestamps
     end
     create_table :roles do |t|
-        t.belongs_to :supplier, index: { unique: true }, foreign_key: true
+        t.belongs_to :empleado, index: { unique: true }, foreign_key: true
         t.text :descripcion
         t.integer :sueldo
         t.timestamps
