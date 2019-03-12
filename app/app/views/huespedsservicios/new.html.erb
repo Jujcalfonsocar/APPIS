@@ -8,30 +8,30 @@
 <% end %>
 
 <%= form_for @solicitud do |f| %>
-      
-    <p>
-    <%= f.label :huesped_id %><br/>
-    <%= f.number_field :huesped_id  %><br/>
-    </p>
-    
-    <p>
-    <%= f.label :servicio_id %><br/>
-    <%= f.number_field :servicio_id  %><br/>
-    </p>
-    
-    <p>
-    <%= f.label :precio %><br/>
-    <%= f.number_field :precio  %><br/>
-    </p>
-        
-    <p>
-    <%= f.label :especificaciones %><br/>
-    <%= f.text_area :especificaciones %><br/>
-    </p
-    
-     <p>
-    <%= f.submit "Crear Nueva solicitud" %><br/>
-    </p>
+  
+<p>
+<%= f.label :huesped_id %><br/>
+<%= f.number_field :huesped_id  %><br/>
+</p>
 
-   <%= link_to "Volver a indice de solicitudes", huespedsservicios_path %>
+<p>
+<%= f.label :servicio_id %><br/>
+<%= f.number_field :servicio_id  %><br/>
+</p>
+
+<p>
+<%= f.label :precio %><br/>
+<%= f.number_field :precio  %><br/>
+</p>
+    
+<p>
+<%= f.label :especificaciones %><br/>
+<%= f.text_area :especificaciones %><br/>
+</p>
+
+ <p>
+<%= f.submit "Crear Nueva solicitud" %><br/>
+</p>
+
+
 <% end %>
