@@ -1,4 +1,4 @@
-class CreateHuespedsServicios< ActiveRecord::Migration[5.0]
+class CreateSolicitudes < ActiveRecord::Migration[5.0]
   def change
     create_table :huespeds do |t|
     end
