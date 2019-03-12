@@ -6,5 +6,10 @@ Rails.application.routes.draw do
     get 'huespedsservicios/new', to: "huespedsservicio#new"
     
     root 'pages#welcome'
-  
+    
+    resources :huespeds
+    resources :huespedsservicios
+    resources :servicios
+    resources :empleados
+    
 end
