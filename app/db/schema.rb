@@ -35,13 +35,13 @@ ActiveRecord::Schema.define(version: 20190312054446) do
     t.integer "precioBase"
   end
 
-  create_table "solicitudes", force: :cascade do |t|
+  create_table "solicituds", force: :cascade do |t|
     t.integer "huesped_id"
     t.integer "servicio_id"
     t.integer "precio"
     t.text    "especificaciones"
-    t.index ["huesped_id"], name: "index_solicitudes_on_huesped_id"
-    t.index ["servicio_id"], name: "index_solicitudes_on_servicio_id"
+    t.index ["huesped_id"], name: "index_solicituds_on_huesped_id"
+    t.index ["servicio_id"], name: "index_solicituds_on_servicio_id"
   end
 
 end
