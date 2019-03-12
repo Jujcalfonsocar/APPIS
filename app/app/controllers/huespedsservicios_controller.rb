@@ -1,4 +1,4 @@
-class HuespedsservicioController < ApplicationController
+class HuespedsserviciosController < ApplicationController
 
     def new
         @solicitud = HuespedsServicios.new
