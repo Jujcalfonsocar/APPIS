@@ -1,6 +1,6 @@
-class AddDescriptionhuespeds < ActiveRecord::Migration[5.0]
+class AddDescripcionhuespeds < ActiveRecord::Migration[5.0]
   def change
-    
+  
     add_column :huespeds, :cedula, :int8
     add_column :huespeds, :nombres, :text
     add_column :huespeds, :apellidos, :text

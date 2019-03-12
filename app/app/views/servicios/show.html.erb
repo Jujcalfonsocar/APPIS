@@ -1,0 +1,14 @@
+<h1>Servicio Creado</h1>
+<p>
+  Titulo: <%= @servicio.cedula %>
+</p>
+<p>
+  Nombres: <%= @servicio.nombres %>
+</p>
+<p>
+  Apellidos: <%= @servicio.apellidos %>
+</p>
+
+
+ <%= link_to "Volver a indice de servicios", servicios_path %>
+ <%= link_to "Editar informacion de servicio", edit_servicio_path(@servicio.id) %>

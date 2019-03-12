@@ -1,0 +1,3 @@
+class HuespedsServicios < ApplicationRecord
+    
+end
