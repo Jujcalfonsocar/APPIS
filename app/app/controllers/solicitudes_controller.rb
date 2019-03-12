@@ -40,7 +40,7 @@ class SolicitudesController < ApplicationController
     end
     
     def index
-        @solicitudes = Solicitud.all
+        @solicituds = Solicitud.all
     end
     
     private 
