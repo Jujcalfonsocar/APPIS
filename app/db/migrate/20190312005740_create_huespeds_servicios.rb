@@ -1,4 +1,4 @@
-class CreateHuespedsServicios < ActiveRecord::Migration[5.0]
+class CreateSolicitudes < ActiveRecord::Migration[5.0]
   def change
     create_table :huespeds do |t|
     end
@@ -6,7 +6,7 @@ class CreateHuespedsServicios < ActiveRecord::Migration[5.0]
     create_table :servicios do |t|
     end
         
-    create_table :huespeds_servicios do |t|
+    create_table :solicitudes do |t|
       t.belongs_to :huesped, index: true
       t.belongs_to :servicio, index: true  
     end

@@ -1,14 +1,14 @@
 Rails.application.routes.draw do
     
-    get 'huespedsservicios/index', to: "huespedsservicios#index"
-    get 'huespedsservicios/edit', to: "huespedsservicios#edit"
-    get 'huespedsservicios/show', to: "huespedsservicios#show"
-    get 'huespedsservicios/new', to: "huespedsservicios#new"
+    get 'solicitudes/index', to: "solicitudes#index"
+    get 'solicitudes/edit', to: "solicitudes#edit"
+    get 'solicitudes/show', to: "solicitudes#show"
+    get 'solicitudes/new', to: "solicitudes#new"
     
     root 'pages#welcome'
     
     resources :huespeds
-    resources :huespedsservicios
+    resources :solicitudes
     resources :servicios
     resources :empleados
     

@@ -1,4 +1,4 @@
-Eple# This file is auto-generated from the current state of the database. Instead
+# This file is auto-generated from the current state of the database. Instead
 # of editing this file, please use the migrations feature of Active Record to
 # incrementally modify your database, and then regenerate this schema definition.
 #
@@ -10,7 +10,7 @@ Eple# This file is auto-generated from the current state of the database. Instea
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 20190312024539) do
+ActiveRecord::Schema.define(version: 20190312031948) do
 
   create_table "empleados", force: :cascade do |t|
     t.text    "nombres"
@@ -29,12 +29,12 @@ ActiveRecord::Schema.define(version: 20190312024539) do
     t.text    "pais_origen"
   end
 
-  create_table "huespeds_servicios", id: false, force: :cascade do |t|
-    t.integer "cedula_huesped"
+  create_table "huespeds_servicios", force: :cascade do |t|
+    t.integer "huesped_id"
     t.integer "servicio_id"
     t.integer "precio"
     t.text    "especificaciones"
-    t.index ["cedula_huesped"], name: "index_huespeds_servicios_on_cedula_huesped"
+    t.index ["huesped_id"], name: "index_huespeds_servicios_on_huesped_id"
     t.index ["servicio_id"], name: "index_huespeds_servicios_on_servicio_id"
   end
 
