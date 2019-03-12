@@ -23,7 +23,7 @@ class ServiciosController < ApplicationController
     end 
     
     def update
-        @servicio = Serivicio.find(params[:id])
+        @servicio = Servicio.find(params[:id])
          if @servicio.update(servicio_params)
             flash[:notice] = "El servicio se creo satisfactoriamente"
             redirect_to servicio_path(@servicio)

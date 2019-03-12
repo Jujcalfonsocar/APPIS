@@ -1,4 +1,5 @@
 class Huesped < ApplicationRecord #ActiveRecord::Base
-    has_many :solicitudes
-    has_many :servicios, through: :solicitudes
+    self.primary_key = 'cedula'
+    has_many :solicituds
+    has_many :servicios, through: :solicituds
 end 
