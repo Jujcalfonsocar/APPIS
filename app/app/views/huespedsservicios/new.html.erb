@@ -8,14 +8,15 @@
 <% end %>
 
 <%= form_for @solicitud do |f| %>
-  <p>
-    <%= f.label :IDservicio %><br/>
-    <%= f.number_field :IDservicio  %><br/>
+      
+    <p>
+    <%= f.label :huesped_id %><br/>
+    <%= f.number_field :huesped_id  %><br/>
     </p>
     
     <p>
-    <%= f.label :cedula_usuario %><br/>
-    <%= f.number_field :cedula_usuario  %><br/>
+    <%= f.label :servicio_id %><br/>
+    <%= f.number_field :servicio_id  %><br/>
     </p>
     
     <p>
@@ -26,12 +27,7 @@
     <p>
     <%= f.label :especificaciones %><br/>
     <%= f.text_area :especificaciones %><br/>
-    </p>
-    
-    <p>
-    <%= f.label :notas %><br/>
-    <%= f.text_area :notas %><br/>
-    </p>
+    </p
     
      <p>
     <%= f.submit "Crear Nueva solicitud" %><br/>
