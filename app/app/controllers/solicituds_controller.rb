@@ -45,7 +45,7 @@ class SolicitudsController < ApplicationController
     
     private 
         def solicitud_params
-         params.require(:solicitud).permit(:servicio_id,:cedula_huesped,:precio,:especificaciones)
+         params.require(:solicitud).permit(:huesped_id,:servicio_id,:precio,:especificaciones)
         end
     
 end

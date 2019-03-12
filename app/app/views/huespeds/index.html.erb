@@ -1,10 +1,10 @@
 <table>
   <tr>
-    <th> Cedula </th><th> Nombres </th><th> Apellidos </th><th> Celular </th><th> Email </th><th> Fecha de nacimiento </th><th> Pais de Orig </th>
+    <th> ID </th><th> Cedula </th><th> Nombres </th><th> Apellidos </th><th> Celular </th><th> Email </th><th> Fecha de nacimiento </th><th> Pais de Orig </th>
   </tr>
   <% @huespeds.each do |huesped| %>
   <tr>
-    <td><%= huesped.cedula %></td><td><%= huesped.nombres %></td><td><%= huesped.apellidos %></td><td><%= huesped.celular %></td><td><%= huesped.email %></td><td><%= huesped.fecha_nacimiento %></td><td><%= huesped.pais_origen %></td>
+    <td><%= huesped.id %></td><td><%= huesped.cedula %></td><td><%= huesped.nombres %></td><td><%= huesped.apellidos %></td><td><%= huesped.celular %></td><td><%= huesped.email %></td><td><%= huesped.fecha_nacimiento %></td><td><%= huesped.pais_origen %></td>
     <td><%= link_to "Editar Post", edit_huesped_path(huesped.id) %> </td>
     <td><%= link_to "Mostrar Post", huesped_path(huesped) %></td>
     <td><%= link_to "Eliminar Post", huesped_path(huesped), method: :delete, data: {confirm: "Seguro?" } %></td>
