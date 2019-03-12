@@ -6,13 +6,9 @@ class CreateHuespedsServicios < ActiveRecord::Migration[5.0]
     create_table :servicios do |t|
     end
         
-    create_table :huespeds_servicios, id: false do |t|
-      t.integer :cedula_huesped
-      t.integer :servicio_id
+    create_table :huespeds_servicios do |t|
+      t.belongs_to :huesped, index: true
+      t.belongs_to :servicio, index: true  
     end
- 
-    add_index :huespeds_servicios, :cedula_huesped
-    add_index :huespeds_servicios, :servicio_id
-    
   end
 end
