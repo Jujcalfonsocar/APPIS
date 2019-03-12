@@ -1,14 +1,14 @@
-<h1>Huesped Creado</h1>
+<h1>Empleado Creado</h1>
 <p>
-  Titulo: <%= @huesped.cedula %>
+  Titulo: <%= @empleado.cedula %>
 </p>
 <p>
-  Nombres: <%= @huesped.nombres %>
+  Nombres: <%= @empleado.nombres %>
 </p>
 <p>
-  Apellidos: <%= @huesped.apellidos %>
+  Apellidos: <%= @empleado.apellidos %>
 </p>
 
 
- <%= link_to "Volver a indice de huespeds", huespeds_path %>
- <%= link_to "Editar informacion de huesped", edit_huesped_path(@huesped.id) %>
+ <%= link_to "Volver a indice de empleados", empleado_path %>
+ <%= link_to "Editar informacion de empleado", edit_empleado_path(@empleado.id) %>

@@ -8,10 +8,7 @@
 <% end %>
 
 <%= form_for @empleado do |f| %>
-  <p>
-    <%= f.label :cedula %><br/>
-    <%= f.number_field :cedula  %><br/>
-    </p>
+  
     
     <p>
     <%= f.label :nombres %><br/>
@@ -24,28 +21,18 @@
     </p>
     
     <p>
+    <%= f.label :cedula %><br/>
+    <%= f.number_field :cedula  %><br/>
+    </p>
+    
+    <p>
     <%= f.label :celular %><br/>
     <%= f.number_field :celular  %><br/>
     </p>
-        
-    <p>
-    <%= f.label :email %><br/>
-    <%= f.email_field :email %><br/>
-    </p>
-    
-    <p>
-    <%= f.label :fecha_nacimiento %><br/>
-    <%= f.date_field :fecha_nacimiento %><br/>
-    </p>
-    
-    <p>
-    <%= f.label :pais_origen %><br/>
-    <%= f.text_field :pais_origen %><br/>
-    </p>
-    
+           
     <p>
     <%= f.submit "Editar huesped" %><br/>
     </p>
 
-   <%= link_to "Volver a indice de huespeds", huespeds_path %>
+   <%= link_to "Volver a indice de empleados", empleados_path %>
 <% end %>

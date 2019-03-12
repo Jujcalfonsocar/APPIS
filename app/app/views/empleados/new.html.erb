@@ -1,20 +1,13 @@
-<h1>Crear un nuevo Huesped</h1>
-
-<% if @huesped.errors.any? %>
-  <% @huesped.errors.full_messages.each do |mensaje| %>
+<% if @empleado.errors.any? %>
+  <% @empleado.errors.full_messages.each do |mensaje| %>
     <ul>
       <li> <%= mensaje %> </li>
     </ul>
   <% end %>
 <% end %>
 
-
-    <%= form_for @huesped do |f|  %>
-    
-    <p>
-    <%= f.label :cedula %><br/>
-    <%= f.number_field :cedula  %><br/>
-    </p>
+<%= form_for @empleado do |f| %>
+  
     
     <p>
     <%= f.label :nombres %><br/>
@@ -27,29 +20,18 @@
     </p>
     
     <p>
+    <%= f.label :cedula %><br/>
+    <%= f.number_field :cedula  %><br/>
+    </p>
+    
+    <p>
     <%= f.label :celular %><br/>
     <%= f.number_field :celular  %><br/>
     </p>
-        
+           
     <p>
-    <%= f.label :email %><br/>
-    <%= f.email_field :email %><br/>
+    <%= f.submit "Editar huesped" %><br/>
     </p>
-    
-    <p>
-    <%= f.label :fecha_nacimiento %><br/>
-    <%= f.date_field :fecha_nacimiento %><br/>
-    </p>
-    
-    <p>
-    <%= f.label :pais_origen %><br/>
-    <%= f.text_field :pais_origen %><br/>
-    </p>
-    
-    <p>
-    <%= f.submit "Crear Nuevo Huesped" %><br/>
-    </p>
-    
-    <%= link_to "Volver a indice de huespedes", huespeds_path %>
-    
-    <% end %>
+
+   <%= link_to "Volver a indice de empleados", empleados_path %>
+<% end %>

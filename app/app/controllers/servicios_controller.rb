@@ -5,7 +5,7 @@ class ServiciosController < ApplicationController
     end
     
     def create
-         @servicio = Huesped.new(servicio_params)
+         @servicio = Servicio.new(servicio_params)
         if @servicio.save
             flash[:notice] = "El servicio se creo satisfactoriamente"
             redirect_to servicio_path(@servicio)

@@ -1,15 +1,15 @@
 <table>
   <tr>
-    <th> Cedula </th><th> Nombres </th><th> Apellidos </th><th> Celular </th><th> Email </th><th> Fecha de nacimiento </th><th> Pais de Orig </th>
+    <th> ID Empleado </th><th> Nombres </th><th> Apellidos </th><th> Cedula </th><th> Celular </th>
   </tr>
-  <% @huespeds.each do |huesped| %>
+  <% @empleados.each do |empleado| %>
   <tr>
-    <td><%= huesped.cedula %></td><td><%= huesped.nombres %></td><td><%= huesped.apellidos %></td><td><%= huesped.celular %></td><td><%= huesped.email %></td><td><%= huesped.fecha_nacimiento %></td><td><%= huesped.pais_origen %></td>
-    <td><%= link_to "Editar Post", edit_huesped_path(huesped.id) %> </td>
-    <td><%= link_to "Mostrar Post", huesped_path(huesped) %></td>
-    <td><%= link_to "Eliminar Post", huesped_path(huesped), method: :delete, data: {confirm: "Seguro?" } %></td>
+    <td><%= empleado.id %></td><td><%= empleado.nombres %></td><td><%= empleado.apellidos %></td><td><%= empleado.cedula %></td><td><%= empelado.celular %></td>
+    <td><%= link_to "Editar Empleado", edit_empleado_path(empleado.id) %> </td>
+    <td><%= link_to "Mostrar Empleado", empleado_path(empleado) %></td>
+    <td><%= link_to "Eliminar Empleado", empleado_path(empleado), method: :delete, data: {confirm: "Seguro?" } %></td>
   </tr>
   <% end %>
 </table>
 
-<%= link_to "Crear nuevo huesped", new_huesped_path %>
+<%= link_to "Crear nuevo Empleado", new_empleado_path %>

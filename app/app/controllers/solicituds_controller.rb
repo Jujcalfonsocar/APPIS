@@ -1,4 +1,4 @@
-class SolicitudesController < ApplicationController
+class SolicitudsController < ApplicationController
 
     def new
         @solicitud = Solicitud.new
